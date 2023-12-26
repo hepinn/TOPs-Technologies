@@ -1,0 +1,237 @@
+Q.1  Are the HTML tags and elements the same thing?
+Ans. 
+	HTML tags used to hold the HTMl tags. HTML elements hold the content. 
+
+
+Q.2  What are tags and attribute in HTML?
+Ans. 
+	HTML attribute are used the describe the characteristic of an HTML element in detail.
+ 
+
+Q.3  What are the void element in HTML?
+Ans. 
+	A voide element is an element whose content model never allows it to have content under any circumstances. Void element can have attribute.
+        The following is a complate list of the void element in HTML: are, base, br, col, command, embed, hr, img, input, keygen, link, meta, source, track, wbr, param.
+
+
+Q.4 What are HTML entities?
+Ans.   
+	HTML entity is a piece of text ("string") that begins with an ampersad (&) and ends with a semicolon (;). HTML entities are frequently used to display reserved characters, and invisible characters.
+
+
+Q.5 What are the differnt types of lists im HTML?
+Ans.
+	HTML lists come in three main catagories: unodered lists, ordered lists and definition lists.
+
+
+Q.6 What is the 'class' attribute in HTML?
+Ans.
+	the class attribute spacifies one or more clasnames for an element. the class attribute in mostely used to point to a class in styel sheet.
+
+
+Q.7 What is the difference between the 'id' attribute ans 'class' attribute of HTML elements?
+Ans.
+	Difference between class and id: A class name can be used by multiple HTML element, while and iD name must only be used byyy one HTML element within the page.
+
+
+Q.8  What are the various formatting tags in HTML?
+Ans.
+	The following various type of formating tags in HTML:
+- <b> - Bold text.
+- <strong> - Important text.
+- <i> - Italic text.
+- <em> - Emphasized text.
+- <mark> - Marked text.
+- <small> - Smaller text.
+- <del> - Deleted text.
+- <ins> - Inserted text
+
+
+Q.9 How is Cell Padding different from Cell Spacing?
+Ans.
+	Cell padding basivally defines the space present betwwn a table cells border and the content prenst in it. Cells spacing basically defines the space present the space present between individual adjacent cellls.
+
+
+Q.10  • How can we club two or more rows or columns into a single row or column in an HTML
+table?
+Ans.
+	It can be done by using the rowspan and colspan attribute in HTML. the rowspan is used to merge or combine the number of cells in a row whereas the colspan is used to merge column cell in a table.
+
+
+Q.11 • What is the difference between a block-level element and an inline element?
+Ans.
+	inline elements only cover the space as bounded by the tags in the HTML elements. Block elements have top and bottom  margins. Inline elements dont have a top and bottom margin.
+	Ex. Block elements: <p>,<div>,<hr>.
+
+
+Q.12  How to create a Hyperlink in HTML? 
+Ans.
+	The <a> taf define a hyperlink.
+
+
+Q.13 What is the use of an iframe tag?
+Ans.
+	An inline frame is a  HTML element that loads another HTML page within the document.
+
+
+Q.14 What is the use of a span tag? Explain with example? 
+Ans.
+	The <span> tag is an inline container used to mark up a part of a text, or a part of a document. The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute. The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+
+
+Q.15 How to insert a picture into a background image of a web page?
+Ans.
+	The most common and simple way to add background image is using the backgriund image attribute image attribute inside the <body> tag.
+
+
+Q.16 How are active links different from normal links?
+Ans.
+	Active link are typically links that are currently functional and lead to live web pages, while normal links can refer to any link, whether functional or broken. Active links are actively used and accessible, while normal links may or may not be function at a given time.
+
+
+Q.17 What are the different tags to separate sections of text? 
+Ans.
+	We separate a section of texts in HTML using the below tags:
+- <br> tag – It is used to separate the line of    text. It breaks the current line and shifts the flow of the text to a new line.
+
+- <p> tag–This tag is used to write a paragraph of text.
+
+- <blockquote> tag–This tag is used to define large quoted sections.
+
+
+Q.18 Wht is SVG?
+Ans.
+	SVG stands for scalable Vector Graphics. SVG is used to define vector- based graphics for the web. SVG defines the graphics in XML format. Every element and every attribute in SVG files can be animated. 
+
+
+Q.19 What is difference between HTML and XHTML?
+Ans.
+	HTML (Hyper Text Markup Language) and XHTML (Extensible Hyper Text Markup Languge) are both markup language used for creating and displaying web pages. the main difference between them is the syntax and structure; HTMl is more lenient in is its syntax, while XHTML has a more strict syntax and follws XML rules.
+
+
+Q.20 What are logical and physical tags in HTML?
+Ans.
+	 Logical and physical tags are used in HTML for better visibility and understtandingg of the text by the user on the web page. However, both tags different from each other as suggested by their names. Logical tags: Logical tags are used inHTML to display the text according to the logical styels.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
