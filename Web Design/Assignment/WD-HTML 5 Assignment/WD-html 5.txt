@@ -7,6 +7,8 @@ Ans. New HTML5 tags are:
                <figure>, <article>, <header>, <main>,<footer>, <nav>, nd <section>.
 
 
+
+
 2.   How to embed audio and video in a webpage?
 Ans. The HTML5 <audio> and <video> tags make it simple to a website. You need to set src attribute  to identify   the media source and include a controls attribute so the user can play and pause the media.
     
@@ -22,6 +24,8 @@ ex.
       </video>
 
 
+
+
 3.   Sementic element in HTML 5 ?
 Ans. Sementic element in HTML 5:-
         ex.:
@@ -34,6 +38,8 @@ Ans. Sementic element in HTML 5:-
 			 <span> nothing about its content.
 
 
+
+
 4.   Canvas and svg tag?
 Ans. SVG is used to create vector-based graphics, whereas Canvas can render both vector and raster graphics.  
 
@@ -42,7 +48,6 @@ Ans. SVG is used to create vector-based graphics, whereas Canvas can render both
 	ex(tags).:
 
 	Canvas:-
-
 	<canvas id="myCanvas" width="100" height="100"></canvas>
 
 	SVG:-
