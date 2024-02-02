@@ -1,0 +1,244 @@
+Q.1  What are the beneifit of using CSS?
+Ans. Following Benefits of using CSS :- 
+	- Separation of content and style. One of the most significant benefit of CSS is its ability to separte content from presentation,
+	- Consistency,
+	- Faster Loading Times,
+	- Respomsive Design,
+	- Ease of maintenance,
+	- Accessibility,
+	- Print-friendaly pages,
+	- Globale stling,
+	- Efficient Updates,
+	- Animationss and Effects.
+
+
+Q.2   What are the disadvantage of CSS?
+Ans.  Following disadvantages of CSS :-
+	- Browser Compatibility,
+	- Learning Curve,
+	- Lack of Security,
+	- Limited Layout Control,
+	- Performance Impact,
+	- Overriding Styles,
+	- Maintenance Challenges.
+
+
+Q.3   What is the difference between CSS2 and CSS3?
+Ans.    CSS2 introduced a new box model which included, padding, borders, and margins.
+	- CSS3 introduced the flexible box layout module, which allows for more flexible layouts.
+
+
+Q.4  Name a few CSS style components
+Ans. CSS consists of two components: properties: these are human readable identifiers that indicate which stylistc features you want to modify.
+	-EX.,  Font-size,
+	- width,
+	- background-color.
+	- Values: Each property is assigned a value.
+
+
+Q.5  What do you understand by CSS opacity?
+Ans. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+
+
+Q.6  How can the background color of an element be changed?
+Ans. We can set background color by selecting the element by its class name of id name and then apply the background-color property on it to set the background color. 
+	- Syntax: background-color: color_name; 
+	
+
+Q.7  How can image repetition of the backup be controlled?
+Ans. using the background-repeat property that will help us to control the repetition of the image. 
+	- The background-repeat property in CSS is used to repeat the background image both horizontally and vertically
+
+
+Q.8   What is the use of the background-position property?
+Ans. The background-position CSS property sets the initial position for each background image.
+	EX.
+	- background-position: left top;
+	- background-position: left center;
+	- background-position: 50px 100px;
+
+
+Q.9  Which property controls the image scroll in the background?
+Ans. the background-attachment CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.
+	Ex.,
+	- background-attachment: scroll;
+	- background-attachment: fixed;
+	- background-attachment: scroll, local;
+
+
+Q.10  Why should background and color be used as separate properties?
+Ans. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.
+	- Color is an inherited property while the background is not.
+
+
+Q.11  How to center block elements using CSS1?
+Ans. set align-items to center for vertical centering (on the block axis) and justify-content to center for horizontal centering (on the inline axis).
+	Ex., 
+	css-
+	    .container {
+ 	     height: 200px;
+             display: flex;
+  	     align-items: center;
+             justify-content: center;
+	   }
+
+	    .box {
+  	    width: 10em;
+	   }
+	HTML-
+	   <div class="container">
+  	   <div class="box">I am centered!</div>
+	   </div>
+
+
+Q.12  How to maintain the CSS specifications?
+Ans.  The CSS specifications are maintained by the World Wide Web. 
+	Even though every browser supports CSS, there are many inconsistencies in the supported specification version. 
+
+
+Q.13  What are the ways to integrate CSS as a web page?
+Ans. CSS can be integrate to HTML documents in ways: 	- Inline - by using the style attribute inside HTML elements.
+	- Internal - by using a <style> element in the <head> section
+
+
+Q.14  What is embedded style sheets?
+Ans.  An embedded style sheet is a way to apply style information to an HTML document using the style element. When we use an embedded style sheet, its rules apply only to that document.
+	EX.,
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Embedded style sheet example</title>
+
+        <style>
+            h1{
+                text-align: center;
+                font-family: sans-serif;
+                color: brown;
+            }
+            p{
+                margin-left: 20%;
+                margin-right: 20%;
+                padding-left: 5%;
+                padding-right: 5%;
+                background-color: lavender;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra iaculis placerat. Aliquam urna diam, mollis sit amet elit et, posuere mattis ipsum. Curabitur quis quam gravida, dapibus lacus at, dapibus elit. Nam non finibus velit. Vestibulum ante ipsum
+        </p>
+    </body>
+</html>
+
+
+Q.15 What are the external style sheets?
+Ans.  An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet.
+	    ex.,
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+	CSS-
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+
+Q.16  What are the advantages and disadvantages of using external style sheets?
+Ans.  
+	- Advantages:- 
+	    The external style sheet is generally used when you want to make changes on multiple pages.
+	    It is ideal for this condition because it facilitates you to change the look of the entire web site by changing just one file.
+	- Disadvantages:-
+	    The execution of the file may be deferred till the external style sheet is loaded. 
+	    While implementing style sheets, we need to test Web pages with multiple browsers in order to check compatibility issues.
+
+
+Q.17  What is the meaning of the CSS selector?
+Ans.   A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.
+	Ex.,
+h1 {
+  color: blue;
+}
+
+.special {
+  color: blue;
+}
+
+
+Q.18  What are the media types allowed by CSS?
+Ans.   continuous or paged. visual, audio, speech, or tactile. grid (for character grid devices), or bitmap.
+	Ex.,
+ @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+ CSS-Code;
+}
+
+
+Q.19  What is the rule set?
+Ans. A CSS rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is h1 , points to an HTML element. The declaration(s), which in this example are color: blue and text-align: center style the element with a property and value.
+	- EX.,
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Rulesets in CSS</title> 
+    <style> 
+        h1 { 
+            color: green; 
+        } 
+        /* Selector */ 
+        p:first-child{  
+             
+            /* Declaration-block */ 
+            background-color: green; 
+            color: white; 
+            font-size: 15px; 
+            border-radius: 50px         
+            ; 
+            text-transform: uppercase                 
+            ; 
+            font-weight: bold; 
+        } 
+  
+        body { 
+            text-align: center; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <div> 
+        <p>Welcome To Largest Computer Science portal</p> 
+  
+        <h1>GeeksforGeeks</h1> 
+        <h2>CSS Rulesets</h2> 
+  
+        <p>GeeksforGeeks </p> 
+  
+    </div> 
+</body> 
+</html>
+
+
+Q.20  create layout
+Ans. on next VS code file.
+
+	
+	
+
+
+
