@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let num = 64728;
+
+       function rnum(num){
+        let rnum1 = 0;
+        while(num > 0){
+            rnum1 = rnum1 * 10 + num % 10;
+            num = Math.floor(num / 10);
+        }
+        return rnum1;
+       }
+       document.write(num + " Reverse is " +rnum(num))
+    </script>
+</body>
+</html>

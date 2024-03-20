@@ -1,0 +1,403 @@
+Q.1  What is javascript. how to use it?
+Ans. 
+	Javascript is a scripting programing language that allows you to implement complex feature on web pages.
+	-->use:- On the developer tools go to the console tab. then, write JS code and press enter to run the code.
+	-->use in HTMl:- 1) - <script>Content</script>
+	    2)-<script src="file_name"></script>
+
+Q.2  How many type of Variable in JS?
+Ans.
+	Three type of variables: 1) var, 2)let and 3) const.
+
+Q.3  Define a data types in js?
+Ans.	
+	Data types in JS define the data type that a variable can store. like- string,number,boolean,undefined,null and symbole.
+
+Q.4 Write a mul function which will work properly when invoke with following syntex.
+Ans.
+	Syntexl:-
+		function mul(x) {
+		  return function (y) {
+		    return function (z) {
+			return x * y * z;
+		    };
+		   };
+		 }; 
+	
+
+Q.5  Write the deference between undefine and undeclare in JS?
+Ans.
+	Undefine:-It occurs when a variable has been declared but has not been assigned any value. undifined is not akeyword.
+	Undeclared:- It Occurs when we try to access any variable that is not initialized or declared earlier using the var or const keyword.
+
+Q.6 Using console.log( ) print out the following statement: The quote.....
+Ans.
+	in Vs code file--
+
+Q.7 Check if type '10' is exactly equal to 10. If not make it exactly equal?
+Ans.
+	Ans is in VS code--
+
+Q.8 Write a JS Program to find the area of triangle?
+Ans.
+	Ans in VS code--
+
+Q.9 Write a JS program to calculate days left until next christmas?
+Ans.
+	Ans in VS code--
+
+Q.10 What is condition statement?
+Ans. 
+	A condition statement is an if- then statement,
+	ex.-"if rohit does his homework , then rohit will get a good grade."
+
+Q.11 Find circumference of Rectangle formula : C = 4*a?
+Ans.
+	 Circumference of a square is 20. Explain in VS code--
+
+Q.12 WAP to convert years into days and days into year?
+Ans.	
+	Ans in VS code--
+
+Q.13 Convert temperature fahrenheit to celsiud? (Conditional logic Question)
+Ans.
+	Ans in VS code---	
+
+Q.14  Write a JS exercise to get the extention of a filename?
+Ans.
+	Ans in VS code--
+
+Q.15 write is the result of the expression(5>3 && 2<4)?
+Ans. 
+	Expression is true, becasuse both condition are true.
+
+Q.16 what is the result of the expression(true && 1 && "hello")?
+Ans.
+	The result is "hello", because all the operand are truthy, and the "&&" operator returns the last truthy operand.
+
+Q.17 What is the result of the expression (true && false || false && true)?
+Ans.  
+	False is the result of the expression (true && false || false && true)
+
+Q.18 What is a loop and switch case in JS define that?
+Ans.
+	Loop :-> Loops are used in JS to perform repeated task based on a condition. Conditions typically return true or false. A loop will continue running until the defined condition returns false.
+
+	Switch case :-> The switch statemeent is a part of JS "conditional" statemeent, which are used to perform different actions based on different conditions. Use switch to select one of many blocks of code to be executed. This is the perfect soulation for long, nested if/else statement.
+
+Q.19 What is the use of is Nan function?
+Ans.
+	is Nan() return true if a number is Not-a-Number.
+ - is Nan() convert the value to a number before testing it.
+
+Q.20 What is the difference between && and || in JS?
+Ans.
+	if you are using ||(or) the compiler check left and right from this operator and it enough if min ONE side return side return true. If you are using a &&(and) operator both sides have to be true (or false). By the way this concept is also valid if you do have a chain or || or &&.
+
+	ex. ||(or) if(3<4 || 3>4) is true
+	    &&(And) if(3<4 && 3>4) is false
+
+Q.21 What is the use of Void (0)/
+Ans.
+	JS Void ) means returning undefined (void) as a primitive value. You might come acreoss the term "JS:void(0)" while going through HTML documents.
+ - it is used to prevent any side effect caused while inserting an expression in a web page.
+
+Q.22 Check number  is positive or negative in JS?
+Ans.
+	Ans in VS code--
+
+Q.23 Find the Character Is Vowel or Not ?
+Ans.
+	Ans in Vs code--
+
+Q.24 Write to check whether a number is negative, positive, or zero?
+Ans.
+	Ans in VS code--
+
+Q.25 Write to find number is even or odd using ternary operator in JS?
+Ans.
+	Ans in Vs code--
+
+Q.26 Write find maximum number among 3 number using ternary operator in JS?
+Ans.
+	Ans in VS code--
+
+Q.27 Write find minimum number among 3 number using ternary operator in JS?
+Ans.
+	Ans in VS code--
+
+Q.28 Write to find the largest of three number in JS?
+Ans.
+	Ans in Vs code--
+
+Q.29 Write to show:
+	(A) Monday to Sunday using case in JS?
+	Ans.    In VS code--
+
+	(B) Vowel or consonant using switch case in JS/
+	Ans.    In VS code--
+
+Q.30 What are the looping structures in JS? Any one example?
+Ans.
+	Visual basic loop structures allow you to run one or more lines of code repetitively. You can repeat the statement in a loop structure until a condition is true, until a condition is false, a spacified of times, or once for each element in a collection.
+	Ex.:
+	  1 - for statement,
+	  2 - do while statement,
+	  3 - while statement,
+	  4 - labeled statement,
+	  5 - break statement,
+	  6 - continue statement,
+	  7 - for in statement,
+	  8 - for of statement.
+
+Q.31 Write a print 972 to 897 using for loop in JS?
+Ans.
+	Ans in Vs code--
+
+Q.32 Write to print factorial of given number?
+Ans.
+	Ans in VS code--
+
+Q.33 Write to print fibonacci series up to given number?
+Ans.
+	Ans in VS code--
+
+Q.34 Write to print number in reverse ordder e.g : number = 64728 ---> reverse = 82746 in js?
+Ans.
+	Ans in VS code--
+
+Q.35 write a program make a summation of given number (E.g., 1523 Ans: -11) in Js?
+Ans.
+	Ans in VS code--
+
+Q.36 write a program you have to make a summation of first and last Digit.(E.g., 1234 Ans: = 5) in JS?
+Ans.
+	Ans in VS code--
+
+Q.37 Use console.log() and escape character to print folowing pattern in JS?
+Ans.
+	Ans in VS code--
+
+Q.38 Use pattern in console.log() in JS?
+Ans.
+	Ans in VS code--
+
+Q.39 Accept 3 number from user using while loop and check each numbers palindrome?
+Ans.
+	Ans in VS code--
+
+Q.40 Write a JavaScript Program to display the current day and time in the following format.
+Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ?
+Ans.
+	Ans in VS code--
+
+Q.41 Write a javascript program to get the current date?
+Ans.
+	Ans in VS code--
+
+Q.42  Write a JavaScript program to compare two objects?
+Ans.
+	Ans In VS code--
+
+Q.43 Write a JavaScript program to convert an array of objects into CSV string
+Ans.
+	Ans in VS code--
+
+Q.44 Write a JavaScript program to capitalize first letter of a string?
+Ans.	
+	Ans in VS code--
+
+Q. 45 Write a JavaScript program to determine if a variable is array?
+Ans.
+	Ans in VS code--
+
+Q.46 Write a JavaScript program to clone an array?
+Ans.
+	Ans in VS code--
+
+Q.47 What is the drawback of declaring methods directly in JavaScript objects?
+Ans.
+	We will examine some of the potential deawbacks of using JS in web development, such as slow rendering, limited debugging tools, and potential security risks.
+
+Q.48 Print the length of the string on the browser console using console.log()?
+Ans.
+	Ans in VS code--
+
+Q.49 Change all the string characters to capital letters using toUpperCase() method?
+Ans.
+	Ans in VS code--
+
+Q.50 What is the drawback of declaring methods directly in JavaScript objects?
+Ans.
+	We will examine some of the potential deawbacks of using JS in web development, such as slow rendering, limited debugging tools, and potential security risks.
+
+Q.51 Write a JavaScript program to get the current date. Expected Output : mm-dd-yyyy,
+mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+Ans.
+	Ans in VS code--
+
+Q.52 Use indexOf to determine the position of the first occurrence of a in 30 Days Of
+JavaScript?
+Ans.
+	Ans in VS code--
+
+Q.53 Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of
+JavaScript?
+Ans.
+	Ans in VS code--
+
+Q.54 Form Validtion in JS?
+Ans.
+	Ans in VS code--
+
+Q.55 Form in Email, number, Password, Validation?
+Ans.
+	Ans in VS code--
+
+Q.56 Dynamic Form Validation in JS?
+Ans.
+	Ans in VS code--
+Q.57 how many type of JS Event? How to use it ?
+Ans.
+	8 type of event:
+		1. On-click Event,
+		2. On-key Event,
+		3. onmousein Event,
+		4. on-mouseout Event,
+		5. on-change Event,
+		6. on-load Event,
+		7. on-focus Event,
+		8. on-blure Eveent.
+
+Q.58 Find the length of a string without using libraryFunction?
+Ans.
+	Ans in VS code--
+	
+Q.59 What is Bom vs Dom in JS?
+Ans.
+	DOM: Objects that have to do with the currently loaded page (the page is also called the document) BOM: Objects that deal with everything outside the page (the browser window and the desktop screen).
+	
+Q.60 Array vs object difference in JS?
+Ans.
+	arrays use numbered indexes. In JavaScript, objects use named indexes. Arrays are a special kind of objects, with numbered indexes
+
+Q.61 Split the string into an array using split() Method?
+Ans.
+	Ans in VS code--
+
+Q.62 Check if the string contains a word Script using includes() method?
+Ans.
+	Ans in VS code--
+
+Q.63 Change all the string characters to lowercase letters using toLowerCase() Method.
+Ans.
+	Ans in VS code--
+
+Q.64 What is Character at index 15 in ’30 Days of JavaScript’ string? Use charAt() method.
+Ans.
+	Ans in VS code--
+Q.65 copy to one string to another string in JS?
+Ans.
+	Ans in VS code--
+
+A. What is JavaScript?
+Ans.
+	JavaScript is an open-source programming language. It is designed for creating web-centric applications. It is lightweight and interpreted, which makes it much faster than other languages. JavaScript is integrated with HTML, which makes it easier to implement JavaScript in web applications.
+
+B. What is the use of isNaN function?
+Ans.
+	isNaN() returns true if a number is Not-a-Number. In other words: isNaN() converts the value to a number before testing it
+
+C. What is negative Infinity?
+Ans.
+	The symbol “∞”, (called the lemniscate), is used to denote infinity. It looks like a sideways 8. Similarly, there is a concept called negative infinity, which is less than any real number. The symbol “-∞” is used to denote negative infinity.
+
+D. Which company developed JavaScript?
+Ans.
+	JavaScript was created at Netscape Communications by Brendan Eich in 1995.
+
+E. What are undeclared and undefined variables?
+Ans.
+	Undefined: It occurs when a variable has been declared but has not been assigned any value. Undefined is not a keyword. 
+	Undeclared: It occurs when we try to access any variable that is not initialized or declared earlier using the var or const keyword.
+
+F. Write the code for adding new elements dynamically?
+Ans.
+	Ans in VS code--
+G. What is the difference between ViewState and SessionState?
+Ans.
+	Maintained at session level. View state can only be visible from a single page and not multiple pages. Session state value availability is across all pages available in a user session. It will retain values in the event of a postback operation occurring.
+
+H. What is === operator?
+Ans. 
+	The === operator in JavaScript is called the strict equality operator. It checks if two values are equal, both in value and type. This means that it not only checks the value of the two operands but also checks if they are of the same data type.
+
+I. How can the style/class of an element be changed?
+Ans.
+	Ans in VS code--
+
+J. How to read and write a file using JavaScript?
+Ans.
+	Path − The first parameter is the path of the file or the name of the file into which the input data is to be written. ...
+	inputData − The second parameter is the input data which contains the data to be written in the file that is opened.
+
+K. What are all the looping structures in JavaScript?
+Ans.
+	1. for statement,
+	2. do...while statement,
+	3. while statement,
+	4. labeled statement,
+	5. break statement,
+	6. continue statement,
+	7. for...in statement,
+	8. for...of statement.
+
+L. How can you convert the string of any base to an integer in JavaScript?
+Ans.
+	There's a function called parseInt() in JavaScript, this is used for parsing a string as an argument and it returns an integer of the specified radix (basically the base of the numerical system) as output.
+	in VS code--
+
+M. What is the function of the delete operator?
+Ans.
+	The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.
+
+N. What are all the types of Pop up boxes available in JavaScript?
+Ans.
+	JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+O. What is the use of Void (0)?
+Ans.
+	JavaScript:void(0) while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+P. How can a page be forced to load another page in JavaScript?
+Ans.
+	Navigating to a new page can be done using window. location. assign() .
+
+Q. What are the disadvantages of using innerHTML in JavaScript?
+Ans.
+	It is very slow because as inner HTML already parses the content even we have to parse the content again so that's why it takes time.
+
+
+
+
+	
+	
+
+
+
+	
+
+
+	
+	
+
+	
+
+
+	
+
+
+
+
+
+	

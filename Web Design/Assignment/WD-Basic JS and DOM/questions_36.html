@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 1234;
+        var firstDigit;
+        var lastDigit = num % 10;
+        var len = num.toString().length-1;
+        firstDigit = parseInt(num / Math.pow(10,len));
+        var sum = firstDigit + lastDigit;
+        document.write(num + ": Sum of First and Last Digit = " + sum)
+    </script>
+</body>
+</html>

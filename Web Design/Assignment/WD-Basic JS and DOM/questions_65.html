@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function myCopy(s1, s2) {
+            let i = 0;
+            for (i = 0; i < s1.length; i++)
+                s2[i] = s1[i];
+        }
+
+        let s1 = "abcdefg";
+        let s2 = [];
+        let index = 0;
+
+        myCopy(s1, s2, index);
+
+        document.write(s2.join(""));
+    </script>
+</body>
+
+</html>

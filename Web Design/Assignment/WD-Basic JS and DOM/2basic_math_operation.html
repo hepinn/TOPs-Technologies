@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mathematical Functions in Javascript</title>
+    <!-- Addition Operator -->
+    <script language="javascript" type="text/javascript">
+        function add() {
+            a = Number(document.calculator.text1.value);
+            b = Number(document.calculator.text2.value);
+            c = a + b;
+            document.calculator.total.value = c;
+        }
+    </script>
+
+    <!-- Subtraction Operator -->
+    <script language="javascript" type="text/javascript">
+        function subtract() {
+            a = Number(document.calculator.text1.value);
+            b = Number(document.calculator.text2.value);
+            c = a - b;
+            document.calculator.total.value = c;
+        }
+    </script>
+
+    <!-- Multiplication Operator -->
+    <script language="javascript" type="text/javascript">
+        function multiply() {
+            a = Number(document.calculator.text1.value);
+            b = Number(document.calculator.text2.value);
+            c = a * b;
+            document.calculator.total.value = c;
+        }
+    </script>
+
+    <!--Division Operator-->
+    <script language="javascript" type="text/javascript">
+        function divide() {
+            a = Number(document.calculator.text1.value);
+            b = Number(document.calculator.text2.value);
+            c = a / b;
+            document.calculator.total.value = c;
+        }
+    </script>
+
+    <!--Modular Operator-->
+    <script language="javascript" type="text/javascript">
+        function modulus() {
+            a = Number(document.calculator.text1.value);
+            b = Number(document.calculator.text2.value);
+            c = a % b;
+            document.calculator.total.value = c;
+        }
+    </script>
+
+    <style>
+        form {
+            height: 290px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid #aaa;
+            border-radius: 5px 5px;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <br>
+    <form name="calculator">
+        <h2>Maths Operations</h2>
+        Enter 1st number:  <input type="text" name="text1" placeholder="23"><br><br>
+        Enetr 2nd number:    <input type="text" name="text2" placeholder="32"><br><br>
+        <input type="button" value="+" onClick="javascript:add();">
+        <input type="button" value="-" onClick="javascript:subtract();">
+        <input type="button" value="*" onClick="javascript:multiply();"><br>
+        <input type="button" value="/" onClick="javascript:divide();">
+        <input type="button" value="%" onClick="javascript:modulus();">
+        <br><br>
+        <b>Answer is:</b><br> 
+        <input type="text" name="total" disabled>
+    </form>
+    
+</body>
+</html>

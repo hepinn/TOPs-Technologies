@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .abc {
+        height: 10%;
+    }
+
+    table {
+        border: none;
+        height: 300px;
+    }
+</style>
+
+<body>
+
+    <center>
+        <table cellspacing="7">
+            <tr>
+                <th>Marksheet fo Information Technology</th>
+            </tr>
+            <tr align="center">
+                <td align="cenetr">Enter Marks</td>
+            </tr>
+
+            <tr>
+                <td>C language :</td>
+                <td><input type="text" id="aa"></td>
+            </tr>
+            <tr>
+                <td>C++ Language :</td>
+                <td><input type="text" id="bb"></td>
+            </tr>
+            <tr>
+                <td>Database :</td>
+                <td><input type="text" id="cc"></td>
+            </tr>
+            <tr>
+                <td>HTML :</td>
+                <td><input type="text" id="dd"></td>
+            </tr>
+            <tr>
+                <td>CSS :</td>
+                <td><input type="text" id="ee"></td>
+            </tr>
+            <tr>
+                <td>php :</td>
+                <td><input type="text" id="ff"></td>
+            </tr>
+            <tr>
+                <td>Core java :</td>
+                <td><input type="text" id="gg"></td>
+            </tr>
+
+            <tr>
+                <th colspan="5" height="30">
+                    <input type="submit" value="Result" onclick="Sub()">
+                </th>
+            </tr>
+
+            <br>
+            <table class="abc" id="abc">
+                <tr>
+
+                    <th>Total : </th>
+                    <th>Percentage: </th>
+
+                </tr>
+                <table>
+                </table>
+
+    </center>
+
+    <script>
+        function Sub() {
+            let a, b, c, d, e, f, g, sum, avg;
+            a = parseFloat(document.getElementById('aa').value);
+            b = parseFloat(document.getElementById('bb').value);
+            c = parseFloat(document.getElementById('cc').value);
+            d = parseFloat(document.getElementById('dd').value);
+            e = parseFloat(document.getElementById('ee').value);
+            f = parseFloat(document.getElementById('ff').value);
+            g = parseFloat(document.getElementById('gg').value);
+
+            // Calculating Total
+            sum = a + b + c + d + e + f + g;
+            pers = sum / 700 * 100;
+            // Display on Student Data
+            let newTable = document.getElementById('abc');
+            let row = newTable.insertRow(-1);
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(0);
+            let cell3 = row.insertCell(0);
+
+
+            cell3.innerHTML = sum + "/350";
+            cell2.innerHTML = pers + "% ";
+
+
+
+        }
+    </script>
+</body>
+</html>

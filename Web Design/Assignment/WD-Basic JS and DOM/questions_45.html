@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkArray() {
+            let str = 'This is a string';
+            let num = 25;
+            let arr = [10, 20, 30, 40];
+         
+            let ans = str instanceof Array;
+            console.log("Output for String:" + ans);
+            document.write("Output for String:" + ans + " <br>");
+         
+            ans = num instanceof Array;
+            console.log("Output for Number:" + ans);
+            document.write("Output for Number:" + ans + "<br>");
+         
+            ans = arr instanceof Array;
+            console.log("Output for Array:" + ans );
+            document.write("Output for Array:" + ans + "<br>");
+        }
+         
+        checkArray();
+    </script>
+</body>
+</html>
