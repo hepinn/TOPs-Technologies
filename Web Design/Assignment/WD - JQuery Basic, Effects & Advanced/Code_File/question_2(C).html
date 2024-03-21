@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Animation</title>
+</head>
+
+<body>
+    <p>Click the button multiple times to toggle the animation.</p>
+
+    <button>Start Animation</button>
+
+    <div style="background:#76747e;height:100px;width:100px;position:absolute;"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("div").animate({
+                height: 'toggle'
+            });
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+Q.1 What is jQuery?
+Ans.
+	jQuery is a lightweight, "write less, do more", Javascript library.
+
+- The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+- jquery takes a lot of common tasks that require many lines of Javascript code to accomplish, and them into method that you can call with a single line of code.
+
+- jQuesry also simplifies a lot of the complicated things from javaacript, like AJAX call and DOM manipilation.
+
+- The jQuery library contains the following features;
+	~ HTML/DOM manipulation,
+	~ CSS manipulation,
+	~ HTML event methods,
+	~ Effect amd animations,
+	~ AJAX,
+	~ Utilities.
+
+
+Q.2  How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation?
+Ans.
+	Ans in VS code file..
+
+
+Q.3 How to create slider with animation?
+Ans.
+	Ans in VS code file...
