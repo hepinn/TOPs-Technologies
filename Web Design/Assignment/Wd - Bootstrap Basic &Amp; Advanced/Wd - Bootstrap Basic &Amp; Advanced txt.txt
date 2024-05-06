@@ -1,0 +1,66 @@
+Q.1  What are the advantages of Bootstrap?
+Ans.
+	 - Easy initiation. Coding is a hurricane task for a   person who is unbeknownst to web development,
+	 - Responsiveness,
+	 - Highly customizable,
+	 - Extremely user-centric,
+	 - Top-notch support,
+	 - Cross-browser compatibility
+	 - JavaScript plugins to your rescue,
+	 - Far-reaching popularity.
+
+
+Q.2 What is a Bootstrap Container, and how does it work?
+Ans.
+	Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them.
+
+
+Q.3 What are the default Bootstrap text settings?
+Ans.
+	Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5. 
+	- The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif. 
+	- In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+
+
+Q.4 What do you know about the Bootstrap Grid System?
+Ans.
+	Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive.	
+
+
+Q.5 What is the difference between Bootstrap 4 and Bootstrap 5.
+Ans.
+	Bootstrap 5 has removed the jQuery dependency, aiming for a more modern and lightweight approach. 
+	- Utility Classes: Bootstrap 5 introduces more utility classes, making it easier to apply styles directly in the HTML without the need for custom CSS.
+
+
+Q.6 What is a Button Group, and what is the class for a basic Button Group?
+Ans.
+	“Button Groups” in Bootstrap is a class of name “btn-group” which is used to create a series of buttons in groups (without spaces) vertically or horizontally.
+~ Ex is in VS code--
+
+
+Q-7 How can you use Bootstrap to make thumbnails?
+Ans.
+	in VS code--
+
+Q.8 In Bootstrap 4, what is flexbox?
+Ans.
+	In Bootstrap 4, flex box is used to control the layout and alignment specification of Bootstrap 4 components. 
+- Ex in VS code--
+
+Q.9 How can one create an alert in Bootstrap?
+Ans.
+	-in VS code--
+
+Q.10 What is a bootstrap card and how would you create one?
+Ans.
+	 A basic Bootstrap card consists of a . card class with the . card-body class, allowing you to add text, images, links, and other Bootstrap elements within a rounded border.
+	in Vs code--
+
+
+
+
+
+
+
+	
