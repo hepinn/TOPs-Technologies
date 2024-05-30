@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Function to fetch data from the API
+        function fetchData() {
+            fetch('https://fakestoreapi.com/products')
+                .then(response => {
+                    // Check if the response is successful (status code 200)
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    // Parse the JSON response
+                    return response.json();
+                })
+                .then(data => {
+                    // Log the data obtained from the API
+                    console.log('Data from API:', data);
+                    // You can process or display the data here as needed
+                })
+                .catch(error => {
+                    // Log any errors that occur during fetching
+                    console.error('Error fetching data:', error);
+                });
+        }
+
+        // Call the fetchData function to retrieve data from the API
+        fetchData();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Expressions</h2>
+    <h4>Question 1 -> 5 > 4</h4>
+    <p id="demo"></p>
+
+    <h4>Question 2 -> "apple" > "pineapple"</h4>
+    <p id="demo2"></p>
+
+    <h4>Question 3 -> "2" > "12"</h4>
+    <p id="demo3"></p>
+
+    <h4>Question 4 -> undefined == null</h4>
+    <p id="demo4"></p>
+
+    <h4>Question 5 -> undefined === null</h4>
+    <p id="demo5"></p>
+
+    <h4>Question 6 -> null == "\n0\n"</h4>
+
+    <p id="demo6"></p>
+    <h4>Question 7 -> null === +"\n0\n"</h4>
+
+    <p id="demo7"></p>
+    <script>
+        document.getElementById("demo").innerHTML = 5>4;
+
+        document.getElementById("demo2").innerHTML = "apple" > "pineapple";
+
+        document.getElementById("demo3").innerHTML = "2" > "12";
+
+        document.getElementById("demo4").innerHTML = undefined == null;
+
+        document.getElementById("demo5").innerHTML = undefined === null;
+        
+        document.getElementById("demo6").innerHTML = null == "\n0\n";
+
+        document.getElementById("demo7").innerHTML = null === +"\n0\n";
+
+    </script>
+</body>
+
+</html>

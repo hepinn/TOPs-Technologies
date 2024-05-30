@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>This example adds a new property to an object.</p>
+
+    <p id="demo"></p>
+</body>
+<script>
+    // Create an Object:
+    const person = {
+        firstName: "Patel",
+    };
+
+    // Add a Property
+    Object.defineProperty(person, "lastName", { value: "smith" });
+
+    document.getElementById("demo").innerHTML = person.lastName;
+</script>
+
+</html>

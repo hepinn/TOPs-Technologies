@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h3>Question 6: Replace Function Expressions with arrow functions </h3>
+    <button onclick="as()">Click It</button>
+    <script>
+        function ask(question, yes, no) {
+            if (confirm(question)) yes();
+            else no();
+          }
+          
+          ask(
+            "Do you agree?",
+            function() { alert("You agreed."); },
+            function() { alert("You canceled the execution."); }
+          );
+    </script>
+</body>
+</html>

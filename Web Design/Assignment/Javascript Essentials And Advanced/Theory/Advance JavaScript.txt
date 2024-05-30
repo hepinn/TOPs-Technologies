@@ -1,0 +1,192 @@
+MODULE: 1 (Introduction and Code Quality)
+`````````````````````````````````````````
+
+Q.1  Write a Program to show an alert
+Ans.
+	Ans. in VS code--
+
+
+Q.2 What will be the result for these expressions?
+	1. 5 > 4
+	2. "apple" > "pineapple"
+	3. "2" > "12"
+	4. undefined == null
+	5. undefined === null
+	6. null == "\n0\n"
+	7. 7. null === +"\n0\n"
+Ans.
+	Ans. in VS code--
+
+Q.3 Will alert be shown?
+	if ("0") { alert( 'Hello'); }
+Ans.
+	Ans. in VS code--
+
+
+Q.4 What is the code below going to output? alert( null || 2 || undefined );
+Ans.
+	Ans. in VS code--
+
+
+Q.5 The following function returns true if the parameter age is greater than
+18. Otherwise it asks for a confirmation and returns its result:
+
+function
+checkAge(age)
+{
+	if (age> 18) { return true; }
+else {
+}
+
+	// ...return confirm (‘did parents allow you?');
+Ans.
+	Ans. in VS code--
+
+
+Q.6 Replace Function Expressions with arrow functions in the code below:
+
+Function
+  ask(question, yes, no)
+{ if (confirm(question))yes();
+   else
+   no();
+}
+ask("Do you agree?", function()
+ { alert("You agreed."); },
+
+function() {
+	alert("You canceled the execution."); }
+}
+
+--------------------------------------
+|  MODULE: 2 (Data Types and Objects) |
+--------------------------------------
+
+Q.1 Write the code, one line for each action:
+   a) Create an empty object user.
+   b) Add the property name with the value John.
+   c) Add the property surname with the value Smith.
+   d) Change the value of the name to Pete.
+   e) Remove the property name from the object.
+Ans. 
+	Ans in VS code--
+
+
+Q.2 Is array copied?
+let fruits = ["Apples", "Pear", "Orange"]; // push a new value into the "copy" let
+shoppingCart = fruits; shoppingCart.push("Banana"); // what's in fruits?
+alert( fruits.length ); // ?
+Ans.
+	Ans in VS code--
+
+
+Q.3 Map to names
+  let john = { name: "John", age: 25 }; let pete =      { name: "Pete", age: 30 }; let mary =
+  { name: "Mary", age: 28 }; let users = [ john, pete,    mary ]; let names = /* ... your
+  code */ alert( names ); // John, Pete, Mary
+Ans.
+	Ans in VS code--
+
+
+Q.4 Map to objects
+let john = { name: "John", surname: "Smith", id: 1 }; let pete = { name: "Pete",
+surname: "Hunt", id: 2 }; let mary = { name: "Mary", surname: "Key", id: 3 }; let
+users = [ john, pete, mary ]; let usersMapped = /* ... your code ... */
+Ans.
+	Ans in VS code--
+
+
+Q.5 Sum the properties There is a salaries object with arbitrary number of salaries. Write
+the function sumSalaries(salaries) that returns the sum of all salaries using
+  Object.values and the for..of loop.If salaries is empty, then the result must be 0.
+Ans.
+	Ans in VS code--
+
+
+Q.6  Destructuring assignment We have an object: Write the Destructuring assignment that
+reads:
+  a) Name property into the variable name.
+  b) Year’s property into the variable age.
+  c) isAdmin property into the variable isAdmin (false,  if no such property)
+  d) let user = { name: "John", years: 30};
+Ans.
+	Ans in VS code--
+
+
+Q.7 Turn the object into JSON and back Turn the user into JSON and then read it back
+into another variable.
+   user = { name: "John Smith", age: 35};
+Ans.
+	Ans in VS code--
+
+
+
+-------------------------------------------
+| MODULE: 3 (Document, Event and Controls)|
+-------------------------------------------
+
+
+Q.1 Create a program to hide/show the password
+Ans.
+	Ans In VS code--
+
+
+Q.2 Create a program that will select all the classes and loop over and whenever i click the button the alert should show
+Ans.
+	Ans in Vs code--
+
+
+Q.3 Create a responsive header using proper JavaScript
+Ans.
+	Ans in VS code--
+
+
+Q.4 Create a form and validate using JavaScript
+Ans.
+	Ans in VS code--
+
+
+Q.5 Create a modal box using css and Js with three buttons
+Ans.
+	Ans in VS code--
+
+
+Q.6 Use external js library to show slider
+Ans.
+	Ans in Vs code--
+
+
+Q.7  Prevent the browser when i click the form submit button
+Ans.
+	 Ans in VS code--
+
+
+
+_________________________
+|MODULE: 4 (New Request)|
+``````````````````````````
+
+
+Q.1 What is JSON?
+Ans.
+	JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.
+
+
+Q.2 What is promises?
+Ans.
+	In JavaScript, a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed.
+
+
+Q.3 Write a program of promises and handle that promises also
+Ans.
+	Ans in VS code--
+
+
+Q.4 Use fetch method for calling an api https://fakestoreapi.com/products
+Ans.
+	Ans in VS code--
+
+
+Q.5 Display all the product from the api in your HTML page
+Ans.
+	Ans in Vs code--

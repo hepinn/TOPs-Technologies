@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+</head>
+
+<body>
+
+    <div id="productList">
+        <!-- Product list will be displayed here -->
+    </div>
+
+    <script>
+        // Function to fetch data from the API and display products in HTML
+        function displayProducts() {
+            fetch('https://fakestoreapi.com/products')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Get the container element where products will be displayed
+                    const productListContainer = document.getElementById('productList');
+
+                    // Iterate through each product in the data
+                    data.forEach(product => {
+                        // Create elements for displaying product details
+                        const productElement = document.createElement('div');
+                        productElement.classList.add('product');
+
+                        // Create HTML structure for product details
+                        productElement.innerHTML = `
+                            <h2>${product.title}</h2>
+                            <p>${product.description}</p>
+                            <p>Price: $${product.price}</p>
+                            <img src="${product.image}" alt="${product.title}">
+                        `;
+
+                        // Append the product element to the container
+                        productListContainer.appendChild(productElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+
+        // Call the function to fetch data and display products
+        displayProducts();
+    </script>
+
+</body>
+
+</html>

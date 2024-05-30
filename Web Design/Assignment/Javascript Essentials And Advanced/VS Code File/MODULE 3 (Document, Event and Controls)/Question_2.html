@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="clickTheButton">Click The Button to get an
+        alert</button>
+    <script>
+        for (var clickButton of
+            document.getElementsByClassName("clickTheButton"))
+            clickButton.addEventListener("click", alertMeessage);
+        function alertMeessage() {
+            alert("You have clicked the button");
+        }
+    </script>
+</body>
+
+</html>
