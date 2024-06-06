@@ -1,0 +1,8 @@
+Explain Life cycle in Class Component and functional component with Hooks
+Ans.	
+	Class Component:-
+				the three phases of the React component instance lifecycle, namely: mounting, updating, and unmounting – in practice, using the hooks to access the React component lifecycle events – in practice, a brief comparison of both solutions 
+
+	Functional Component:
+
+				React components traverse through four distinct phases during their lifecycle: Initialization, Mounting, Updating, and Unmounting. In each phase, specific methods are invoked, allowing developers to control and manage the behavior of their components.
