@@ -1,0 +1,56 @@
+----Module – 2 Advance JavaScript---
+
+Q.1 Calculate subtotal price of quantity in JavaScript?
+Ans.
+	Ans in VS code--
+
+
+Q.2 What is JavaScript Output method?
+Ans.
+	JavaScript can "display" data in different ways: Writing into an HTML element, using innerHTML . Writing into the HTML output using document.write().
+
+
+Q.3 How to used JavaScript Output method?
+Ans.
+	JavaScript can "display" data in different ways:
+		1. Writing into an HTML element, using innerHTML,
+		2. Writing into the HTML output using document.write(),
+		3. Writing into an alert box, using window.alert(),
+		4.. Writing into the browser console, using console.log().
+	In VS code...
+
+
+Q.4 How to used JavaScript Events to do all examples?
+Ans.
+	Ans in VS code--
+
+
+
+
+	-----Module-7) React - Applying Redux-----
+
+
+Q.1 What is Redux?
+Ans.
+	Redux helps you manage "global" state - state that is needed across many parts of your application. The patterns and tools provided by Redux make it easier to understand when, where, why, and how the state in your application is being updated, and how your application logic will behave when those changes occur.
+
+
+Q.2 What is Redux Thunk used for?
+Ans.
+	 Redux-Thunk enables you to dispatch actions asynchronously, making it easier to manage side effects in your Redux applications.
+
+
+Q.3 What is Pure Component? When to use Pure Component over Component?
+Ans.
+	By using PureComponent , you are telling React that your component complies with this requirement, so React doesn't need to re-render as long as its props and state haven't changed. However, your component will still re-render if a context that it's using changes.
+
+
+Q.4 What is the second argument that can optionally be passed tosetState and what is its purpose?
+Ans.
+	The setState method accepts a second argument: the callback function executed after the state update has been applied and the component has re-rendered. In the above example, the setState callback function logs the message after the state has been updated with the data fetched from the server.
+
+
+Q.5 Create a Table and Search data from table using React Js ?
+Ans.
+	
+
