@@ -1,8 +1,47 @@
 Explain Life cycle in Class Component and functional component with Hooks
 Ans.	
-	Class Component:-
-				the three phases of the React component instance lifecycle, namely: mounting, updating, and unmounting – in practice, using the hooks to access the React component lifecycle events – in practice, a brief comparison of both solutions 
+	Life Cycle in Class Components:
 
-	Functional Component:
+	
+	
+1. Initialization:
+-> Constructor:
+	This is where you initialize state and bind event handlers.
+-> componentWillMount(): 
+Deprecated, was called before the component mounts to the DOM.
 
-				React components traverse through four distinct phases during their lifecycle: Initialization, Mounting, Updating, and Unmounting. In each phase, specific methods are invoked, allowing developers to control and manage the behavior of their components.
+2. Mounting:
+->componentDidMount():
+	Invoked after the component is mounted to the DOM. Ideal for making API calls or setting up subscriptions.
+
+3. Updating:
+-> componentWillReceiveProps():
+	Deprecated, called when the component receives new props.
+-> shouldComponentUpdate(): 
+	Allows you to control if the component should update based on props or state changes.
+->componentWillUpdate():
+	Deprecated, called before the component updates.
+-> componentDidUpdate(): 
+	Invoked after the component updates. Useful for interacting with the DOM.
+
+4.Unmounting:
+-> componentWillUnmount():
+Called just before the component is unmounted from the DOM. Useful for cleanup like removing event listeners or canceling network requests.
+
+
+	-:Life Cycle in Functional Components with Hooks:-
+
+1.Initialization:
+-> Use useState() to initialize state.
+->Use useEffect() with an empty dependency array to mimic componentDidMount(). This ensures the effect is only run once after the initial render.
+
+2.Mounting/Updating:
+-> Use useEffect() with dependencies to handle both mounting and updating.
+-> Inside useEffect(), you can perform any side effects such as data fetching or DOM manipulation.
+
+3.Unmounting:
+-> Use useEffect() with a cleanup function. Return a function from the effect, and React will run it when the component is unmounted. This is equivalent to componentWillUnmount().
+
+
+
+
