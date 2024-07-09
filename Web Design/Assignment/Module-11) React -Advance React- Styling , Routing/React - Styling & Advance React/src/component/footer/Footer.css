@@ -1,0 +1,35 @@
+.text-white {
+    color: #fff !important;
+  }
+  
+  .py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  
+  /* Footer.css */
+  .footer-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: inherit; 
+  }
+  
+  .footer-link:hover {
+    color: #3bb77e;
+  
+  }
+  
+  .footer-logo {
+    max-width: 200px; 
+    height: auto;
+    margin-bottom: 1rem; 
+  }
