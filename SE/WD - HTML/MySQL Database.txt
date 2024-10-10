@@ -1,0 +1,457 @@
+					<--:|SQL DATABASE|:-->
+
+	<--|Database related queries|--> 
+
+
+ Create Database:-- CREATE DATABASE db_name;
+ Create Database if not exists:-- CREATE DATABASE IF NOT EXISTS db_name 
+
+ Delete Database:-- DROP DATABASE db_name;
+ Delate Database:-- DROP DATABASE IF EXISTS db_name
+
+ Delate Table:-- DROP DATABASE db_name
+
+ Use Database:-- USE db_name;
+
+ Show Database:-- SHOW DATABASE
+
+ Show Table:-- SHOW TABLE
+
+ Signed(+ve & -ve data) And Unsigned(+ve data):-- TINYINT UNSIGNED (0 TO 255)
+						 TINTINT(-111 TO 111)
+
+
+
+
+	<--|Types of SQL Commands|-->
+
+
+- DDL (Data Definition language):--  create, alter, rename, truncate & drop
+- DQL (Data Query Language):-- select
+- DML (Data Manipulation Language):-- insert, update & delete
+- DCL (Data Control Language):-- grant & revoke permission to users
+- TCL (Transaction Control Language):-- start transation, commit, rollback 
+
+
+
+	<--|Table related Queries|-->
+
+
+ create Table:-- CREATE TABLE yable_name(
+ 			column_name1 datatype constraint,
+			column_name2 datatype constraint,
+			column_name3 datatype constraint );
+
+ Select And View All coulmns:-- SELECT * FEOM table_name;
+
+
+   [**SELECT in Detail**]
+
+   used to select any data from the databse
+
+	-Bacic syntax
+	SELECT col1,col2 FROM table name;
+
+	-To Select ALL
+	SELECT*FROM table_name;
+
+       **->Where Clause<-**
+
+	to define some condition
+
+	SELECT col1, col2 FROM table_name
+	WHERE condition;
+
+	SELECT * FROM student WHERE marks > "80";
+	SELECT * FROM student WHERE city = "mumbai";
+
+~Using operators in WHERE
+	
+	Arithmatic Operator: +(addition), -(substraction), *(multiplication), /(divivin), %(modulus)
+	Comparison Operator: = (equal to), !=(not equal to), >, >=, <, <=
+	Logical Operator: AND, OR , NOT, IN BETWEEN, ALL, LIKE, ANY
+	-->AND-to check for both condition to be true
+		SELECT * FROM student WHERE marks > 80 AND city = "amreli";
+	-->OR-to check for one of the condition to be true
+		SELECT * FROM student WHERE marks > 90 OR city = "amreli";
+	-->Between- select for a given range
+		SELECT * FROM student WHERE marks BETWEEN 80 AND 90;
+	-->In- matches any value in the list
+		SELECT * FROM student WHERE city IN ( " amreli", rajkot");
+	-->NOT- to nagate the given condition
+		SELECT * FROM student WHERE city NOT IN ("amreli", "rajkot"0;
+		
+	Bitwise Operator: &(Bitwise AND), |(Bitwise OR)
+
+	**->LIMIT CLAUSE**->
+
+~ sets an uper limit on number of (tuples)rows to be return
+	SELECT * FROM student LIMIT 3;
+   - SELECT col1, col2 FROM table_name
+   - LIMIT number;
+
+
+	**->ORDER BY CLAUSE->**
+  ~To short in ascending (ASC) or decending order (DESC)
+	SELECT * FROM student ORDER BY city ASC;
+
+  -SELECT col1, col2 FROM table_name
+   ORDER BY col_name(s) ASC;
+
+
+	**->GROUP BY CLAUSE->**
+
+ ~ Group rows that have the same values that have the same values into summary rows.
+ ~ It collect data frome multiple records and groups the result by one or more colomn.
+
+   *Generally we use group by with some aggregation function.
+
+    Count number of student in each city
+    SELECT city, count(name)
+    FROM student
+    GROUP BY city;
+	 
+
+	**->HAVING CLAUSE<-**
+
+ ~ similat to where i.e. applies some condition on rows. Used when we want to apply any condition after    grouping.
+  
+   count number of students in each city where max marks ceoss 90.
+	SELECT count(name), city
+	FROM student
+ 	GROUP BY city
+	HAVING max(marks) > 90;
+
+
+ Insert Data:-- INSERT INTO table_name (colomn1, colomn2)
+ 		VALUES
+    		(col1_v1, col2_v1),
+		(col2_v2, col2_v2);
+
+
+			###GENERAL ORDER###
+			-SELECT colomn
+			-FROM table_name
+			-WHERE condion
+			-GROUP BY colomn
+			-HAVING condion
+			-ORDER BY colomn ASC;
+
+
+
+	<--|KEY|-->
+
+
+ Primary Key:--
+	it is colomn for set of colomns in a table that uniquely identyfies each row. (a unique id) Thare is only 1 PK & it should be NOT null.
+
+
+ Foreign Key:--
+	A foregn key is column (or set of colomn) in a table that refers to the primary key is 1 and FKs There can be multiple FKs.
+-FKs can have duplicate & null values.
+
+ ~~~~~>CASCADING FOR FK<~~~~~
+
+ -->On update cascade:
+	when we createa foreign key using this  option, it deletes the referencing roes in the child table when the reference row is delete in the parent table which has a primary key.
+
+ -->On Delete Cascade;
+	when we create a forein key usingg UPDATE CASCADE the referncing row are updated in the child table when the parent table which has a primary key.
+
+	CREATE TABLE student(
+	  id INT PRIMARY KEY,
+	  courseID INT,
+	  FOREIN KEY(courseID) REFERENCE cource(id)
+	  ON DELETE CASCADE
+	  ON UPDATE CASCADE
+
+
+
+	<--|CONSTRAINT|-->
+
+
+   -SQL constraints are used to specify rules for data in a table.
+
+  ~ NOT NULL---> colomn cannot have a null values.----> col1 int NOT NULL
+
+  ~ UNIQUE ---> all values in column are different.----> col2 int UNIQUE
+
+  ~ PRIMARY KEY-> makes a colomn unique and not null but used only for one:
+
+			id int PRIMARY KEY
+
+			CREATE TABLE temp(
+			id int not null,
+			PRIMARY KEY (id)
+
+ ~ FOREIGN KEY--> Prevent action that would destry links between tables
+			
+			CREATE TABLE temp (
+			cust_id int,
+			FOREIGN KEY (cust_id) references customer(id)
+			);
+
+
+  ~ DEFAULT---> sets the default value  of a colomn
+
+			salary INT DEFAULT 25000 
+
+ ~ CHECK--> it can can limit the values allowed  in colomnn
+			
+			CREATE TABLE city (
+			in INT PRIMARY KEY,
+			city VARCHAR(50),
+			age INT,
+			CONSTRAINT age_check CHECK (age >= 10 AND cit="Delhi")
+			);
+
+			CREATE TABLE newTab (
+			 age INT CHECK (age >= 18)
+			);
+
+
+ 	<--|AGGREGATE FUNCTION-->|
+ ~ Aggregate function perform a calculation on a set of values, and return a single value.
+	-COUNT()
+	-MAX()
+	-MIN()
+	-SUM()
+	-AVG()
+
+  Get maximum marks
+ 	SELECT max(marks)
+	FROM student;
+  
+  Get averege marks
+	SELECT avg(marks)
+	FROM student;
+  
+	
+		*-->TABLE RELATED QUERIES<--*
+ ~ update (to update existing rows)
+
+   UPADTE table_name
+   SET col1 = val1, col2 = val2
+   WHERE condition;
+
+	UPDATE student
+   	SET grade = "O"
+	WHERE grade = "A";
+
+~~~~~~~~~~~~~~~~~~~~~~~safe mode on/off:-----------SET SQL_SAFE_UPDATE = 0;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+~ delete(to delete existing rows)
+
+	DELETE FROM table_name
+	WHERE condition;
+
+	DELETE FROM table_name
+	WHERE marks < 33;
+
+
+
+	-->|TABLE RELATED QUERIES|<--
+~ Alter (to change the schema)
+
+ -->ADD column:
+	ALTER TABLE table_name
+	ADD COULUMN colomn_name datatype constraint;
+
+ -->DROP colomn:
+	ALTER TABLE table_name
+	DROP COLOMN colomn_name;
+
+ -->RENAME table:
+	ALTER TABLE table_name
+	RENAME TO new_table_name;
+
+-->CHANGE COLUMN(rename):
+	ALTER TABLE table_name
+	CHANGE COLUMN old_name new_name new_datatype new_constraint;
+
+ -->MODIFY COLUMN (modify datatype/ constraint)
+	ALTER TABLE table_name
+	MODIFY col_name new_datatype new_constraint;
+
+		1. ADD column:
+			ALTER TABLE student
+			ADD COLUMN age INT NOT NULL DEFAULT 19;
+
+		2. MODIFY column:
+			ALTER TABLE student
+			MODIFY age VARCHAR(2);
+
+		3. CHANGE column(rename):
+			ALTER TABLE student
+			CHANGE age stu_age INT;
+     
+		4. DROP column:
+			ALTER TABLE student
+			DROP COLUMN stu_age;
+
+		5. RENAME Table:
+			ALTER TABLE student
+			RENAME TO sstu;
+
+ --> Table related Queries:
+ ~ Truncate (to delete tables date)
+
+  --> TRUNCATE TABLE table_name;
+
+	UPDATE student
+	SET grade = "0"
+	WHERE grade = "A";
+
+		
+		--->|JOINS inSQL|<--
+
+ ~ join is used to combine rows from two or more tables, based on a related column between them.
+
+
+	-->INNER JOIN:
+  ~ Return records that have matching values in both tables
+
+
+  *syntax
+
+  SELECT column
+  FROM tableA
+  INNER JOIN table B
+  ON table!.col_name = tableB.col_name;
+
+
+	-->LEFT JOIN:
+ ~ Return all records from the left table, and the matched records from the right table
+
+
+	Syntax
+
+	SELECT colomns
+	FROM tableA
+	LEFT JOIN tableb
+	ON tableA.col_name = tableB.col_name;
+
+
+	-->RIGHT JOIN:
+~ Return all records from the right table, and the matched records from the left table
+
+
+	Syntax
+
+	SELECT colomns
+	FROM tableA
+	RIGHT JOIN tableb
+	ON tableA.col_name = tableB.col_name;
+
+
+	-->FULL JOIN::
+~ Return all records when there is a match in either left or right table
+
+	syntax in MySQL
+
+	SELECT * FROM student as A
+	LEFT JOIN course as B
+	ON A.id = B.id
+	UNION
+	SELECT * FROM student as A
+	RIGHT JOIN course as B
+	ON A.id = B.id;
+
+
+	-->SELF JOIN:
+ ~ IT IS A REGULAR JOIN BUT THE TABLE IS JOINED WITH ITSELF
+
+	Syntax
+
+	SELECT column
+	FROM table as a
+	JOIN table as a
+	ON a.col_name + b.col_name;
+
+
+	-->UNION:
+~ it is used to combine the result-set of two or more SELECT statement.
+  Gives UNIQUE records.
+
+
+  To use it :
+	- every SELECT should have same no. of columns
+	- column must have similar data types
+	- colomns in every SELECT should be in same order
+
+
+
+	Syntax
+
+	SELECT column FROM tableA
+	UNION
+	SELECT column FROM tableB
+
+
+	-->SQL SUB QUERIES :
+ ~ A subquery or inner query or a nested query is a query within another SQL query.
+
+ ~ it involves 2 select statement.
+
+
+
+	syntex
+
+	SELECT column
+	FROM table-name
+	WHERE col_name operator
+	( subquery );
+
+
+	-->MySQL Views :
+
+ ~ A view is a virtual table based on the result-set of an SQL statementt.
+
+	CREATE VIEW view1 AS
+	SELECT rollno, name FROM student;
+	
+	SELECT * from view1;
+
+
+  --->>A view always shows uo-to-date data. The database engine recreates the view, every time a user queries 
+       it.
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
