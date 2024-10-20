@@ -1,0 +1,272 @@
+		
+		****************Module – 3 (Collections, functions and Modules)****************
+
+
+Q.1 What is List? How will you reverse a list?
+Ans.
+	List is a group of different type of data.
+
+Q.2 How will you remove last object from a list?
+Ans.
+	One way is to use the pop() method. This method removes the last elements of a  list by default, or you can spacify the index of the element you want to remove. Ans is [25]
+
+Q.3 Diffentiate between append() and extend () methods?
+Ans.
+	The main difference between the append() and extend()  adds a single item to the end of a list, while extend() adds each element from an iterable individually argument.
+
+Q.4 Write a python function to get the largest number, smallest num and sum of all from a list.
+Ans.
+	Ans in VS Code...
+
+Q.5 How will you compare two lists? 
+Ans.
+	Ans In VS code...
+
+Q.6 Write a Python program to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+Ans.
+	Ans In VS code File...
+
+Q.7 Write a python program to remove duplicate from a list.
+Ans.
+	Ans. In VS Code File...
+
+Q.8 Write a Python Program to check a list is empty or not.
+Ans.
+	Ans In VS code file...
+
+Q.9 Write a python function that takes two lists and return true if they have at least one common member.
+Ans.
+ 	Ans in VS code file...
+
+Q.10 Write a Python program to generate and print a list of first and last 5 elements where the values are square of number between 1 and 30.
+Ans.
+	Ans in VS code file...
+
+Q.11 Write a Python function that takes a list and returns a new list with unique elements of the first list.
+Ans. 
+	Ans in VS Code file...
+	
+Q.12 Write a Python program to convert a list of characters into a string. 
+Ans.
+	Ans in VS code file...
+
+Q.13 Write a Python program to select an item randomly from a list. 
+Ans.
+	Ans in VS code File...
+
+
+Q.14 Write a Python program to find the second smallest number in a list
+Ans.
+	Ans in VS code file...
+
+Q.15 Write a Python program to get unique values from a list.
+Ans.
+	Ans in Vs code file...
+
+Q.16 Write a Python program to check whether a list contains a sub list
+Ans.
+	Ans in VS code file...
+
+Q.17 Write a Python program to split a list into different variables
+Ans.
+	Ans in VS code file...
+
+Q.18 What is tuple? Difference between list and tuple. 
+Ans.
+	A tuple is a finite, ordered list of elements that can be used in various fields, including mathematics, computer programming, and databases.
+
+	Difference:-  The key difference between tuples and lists is that while tuples are immutable objects, lists are mutable.
+
+Q.19 Write a Python program to create a tuple with different data types. 
+Ans.
+	Ans in VS code file...
+
+Q.20 Write a Python program to create a tuple with numbers. 
+Ans.
+	Ans in VS code file...
+
+Q.21 Write a Python program to convert a tuple to a string. 
+Ans.
+	Ans in VS code file...
+
+Q.22 Write a Python program to check whether an element exists within a tuple.
+Ans.
+	Ans in VS code file...
+
+Q.23 Write a Python program to find the length of a tuple
+Ans.
+	Ans in VS code...
+
+Q.24 Write a Python program to convert a list to a tuple.
+Ans.
+	Ans in VS code...
+
+Q.25 Write a Python program to reverse a tuple.
+Ans.
+	Ans in VS code...
+
+Q.26 Write a Python program to replace last value of tuples in a list.
+Ans.
+	Ans in VS code file...
+
+Q.27 Write a Python program to find the repeated items of a tuple. 
+Ans.
+	Ans in VS code file...
+
+Q.28 Write a Python program to remove an empty tuple(s) from a list of tuples.
+Ans.
+	Ans in VS code file...
+
+Q.29 Write a Python program to unzip a list of tuples into individual lists.
+Ans.
+	Ans in VS code file...
+
+Q.30  Write a Python program to convert a list of tuples into a dictionary. 
+Ans.
+	Ans in VS code File...
+
+Q.31 How will you create a dictionary using tuples in python? 
+Ans.
+	To create a dictionary using tuples in Python, you can use tuples as keys in the dictionary. Tuples are hashable, unlike lists, so they can be used as keys in dictionaries.
+
+Q.32 Write a Python script to sort (ascending and descending) a dictionary by value.
+Ans.
+	Ans in VS code file...
+
+Q.33  Write a Python script to concatenate following dictionaries to create a new one. 
+Ans.
+	Ans in VS code file...
+
+Q.34 Write a Python script to check if a given key already exists in a dictionary.
+Ans.
+	Ans in VS code file...
+
+Q.35  How Do You Traverse Through A Dictionary Object In Python?
+Ans.
+	1. Traversing a Dictionary Directly.
+	2. Looping Over Dictionary Items: The .items()Method.
+	3. Iterating Through Dictionary Keys: The .keys() Method.
+	4. Walking Through Dictionary Values: The .values() Method.
+
+Q.36 How Do You Check The Presence Of A Key In A Dictionary? 
+Ans.
+	Using the has_key() method returns true if a given key is available in the dictionary, otherwise, it returns a false. With the Inbuilt method has_key(), use the if statement to check whether the key is present in the dictionary.
+
+Q.37 Write a Python script to print a dictionary where the keys are numbers between 1 and 15.
+Ans.
+	Ans in VS code file...
+
+Q.38  Write a Python program to check multiple keys exists in a dictionary.
+Ans.
+	Ans in VS code file...
+
+Q.39 Write a Python script to merge two Python dictionaries .
+Ans.
+	Ans in VS code file...
+
+Q.40 Write a Python program to map two lists into a dictionary .
+Ans.
+	Ans  in VS code file...
+
+Q.41 Write a Python program to combine two dictionary adding values for common keys.
+d1 = {'a': 100, 'b': 200, 'c':300} o d2 = {'a': 300, 'b': 200,’d’:400}
+Ans.
+	Ans in VS code file...
+
+Q.42 Write a Python program to print all unique values in a dictionary.
+Ans.
+	Ans in VS code file...
+
+Q.43 Why Do You Use the Zip () Method in Python?
+Ans.
+	The `zip` function in Python is a built-in function that allows you to aggregate elements from multiple iterables into a single iterable. 
+
+Q.44 Write a Python program to create and display all combinations of letters, selecting each letter from a different key in a dictionary.
+Sample data: {'1': ['a','b'], '2': ['c','d']} 
+Ans.
+	Ans in VS code file...
+
+Q.45 Write a Python program to find the highest 3 values in a dictionary.
+Ans.
+	Ans in VS code file...
+
+Q.46 Write a Python program to combine values in python list of dictionaries. Sample data: [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, o {'item': 'item1', 'amount': 750}].
+Ans.
+	Ans in VS code file...
+
+Q.47 Write a Python program to create a dictionary from a string. 
+Ans.
+	Ans in VS code file...
+
+Q.48 Write a Python function to calculate the factorial of a number (a nonnegative integer).
+Ans. 
+	Ans in Vs code file...
+
+Q.49  Write a Python function to check whether a number is in a given range.
+Ans.
+	Ans in VS code file...
+
+Q.50 Write a Python function to check whether a number is perfect or not.
+Ans.
+	Ans in VS code file...
+
+Q.51 Write a Python function that checks whether a passed string is palindrome or not.
+Ans.
+	Ans in VS code file...
+
+Q.52 How Many Basic Types Of Functions Are Available In Python? 
+Ans.
+	Two types of function:
+	1. User-Defines Functions,
+	2. Built-in Function.
+
+Q.53 How can you pick a random item from a list or tuple?
+Ans.
+	Generate a random item from the tuple using random. choice() method(This function returns a random element from the specified sequence.
+
+Q.54 How can you pick a random item from a range?
+Ans.
+	1. Using random.randrange() function.
+	2. Using random.randint() function.
+	3. Using random.random() function.
+	4. Using random.sample()
+
+Q.55 How can you get a random number in python? 
+Ans.
+	You can use random. randint(a, b) to generate a random integer between a and b, inclusive. For example, random. randint(1, 10) will generate a random number between
+
+Q.56 How will you set the starting value in generating random numbers? 
+Ans.
+	srand(x) used to set the starting value (seed) for generating a sequence of pseudo-random integer values.
+
+Q.57 How will you randomizes the items of a list in place?
+Ans.
+	To shuffle a list in Python, you can use the shuffle() function from the random module to randomly rearrange elements in a list. 
+
+Q.58 Write a Python program to read a random line from a file. 
+Ans.
+	Ans in VS code file...
+
+Q.59 Write a Python program to convert degree to radian.
+Ans.
+	Ans inn VS code file...
+
+Q.60 Write a Python program to calculate the area of a trapezoid.
+Ans.
+	Ans in VS code file...
+
+Q.61 Write a Python program to calculate the area of a parallelogram.
+Ans.
+	Ans in VS code file...
+
+Q.62 Write a Python program to calculate surface volume and area of a cylinder.
+Ans.
+	Ans in VS code file...
+
+Q.63  Write a Python program to returns sum of all divisors of a number.
+Ans.
+	Ans in VS code file...
+
+Q.64 Write a Python program to find the maximum and minimum numbers from the specified decimal numbers. 
+Ans.
+	Ans in VS code file...
