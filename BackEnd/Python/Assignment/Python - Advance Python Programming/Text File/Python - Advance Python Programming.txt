@@ -1,0 +1,145 @@
+Q.1 What is File function in Python? What is keyword to create and write file.
+Ans.
+	You create a file in Python by opening it with the 'w' mode in open() function. If the file doesn't exist, Python will create it. with open('new_file.txt', 'w') as file: file.write('Content of the new file.')
+
+Q.2 Write a python program to read an entire text file.
+Ans.
+	Ans In VS code File...
+
+Q.3 Write a Python program to append text to a file and display the text. 
+Ans.
+	Ans In  VS code File...
+
+Q.4 Write a Python program to read first n lines of a file. 
+Ans.
+	Ans In VS Code File....
+
+Q.5 Write a Python program to read last n lines of a file. 
+Ans.
+	Ans In VS code File...
+
+Q.6 Write a Python program to read a file line by line and store it into a list.
+Ans.
+	Ans In VS code File...
+
+Q.7 Write a Python program to read a file line by line store it into a variable. 
+Ans.
+	Ans In VS code file...
+
+Q.8 Write a python program to find the longest words. 
+Ans.
+	Ans In VS code file...
+
+Q.9 Write a Python program to count the number of lines in a text file. 
+Ans.
+	 Ans In VS code File...
+
+Q.10 Write a Python program to count the frequency of words in a file.
+Ans.
+	Ans In VS code File..
+
+Q.11 Write a Python program to write a list to a file. 
+Ans.
+	Ans In VS code File...
+
+Q.12 Write a Python program to copy the contents of a file to another file. 
+Ans.
+	Ans In VS code file..
+
+Q.13 Explain Exception handling? What is an Error in Python?
+Ans.
+	 Exception handling is a programming technique that allows a program to respond to unexpected conditions, or exceptions, that occur during execution. 
+	An error is an issue in a program that prevents the program from completing its task. In comparison, an exception is a condition that interrupts the normal flow of the program. Both errors and exceptions are a type of runtime error, which means they occur during the execution of a program.
+
+Q.14 How many except statements can a try-except block have? Name Some built-in exception classes: 
+Ans.
+	You can have multiple try blocks in a program but only one except statement with each try block.
+	SyntaxError,
+	NameError,
+	TypeError.
+
+Q.15 When will the else part of try-except-else be executed? 
+Ans.
+	The 'else' block is executed when there are no exceptions raised within the try block. 
+
+Q.16 Can one block of except statements handle multiple exception? 
+Ans.
+	Yes, a single block of except statements in Python can handle multiple exceptions. This feature allows you to handle different types of exceptions using a single block of code.
+
+Q.17 When is the finally block executed? 
+Ans.
+	A finally block always executes, regardless of whether an exception is thrown.
+
+Q.18 What happens when „1‟== 1 is executed? 
+Ans.
+	It simply evaluates to False and does not raise any exception.
+
+Q.19 How Do You Handle Exceptions With Try/Except/Finally In Python? Explain with coding snippets.
+Ans.
+	Ans  In VS code file...
+
+Q.20 Write python program that user to enter only odd numbers, else will raise an exception.
+Ans.
+	Ans In VS code file...
+
+Q.21 What are oops concepts? Is multiple inheritance supported in java.
+Ans.
+	Python include Class, Object, Method, Inheritance, Polymorphism, Data Abstraction, and Encapsulation
+	~> No, Java does not support multiple inheritance in classes
+
+Q.22 How to Define a Class in Python? What Is Self? Give An Example Of A Python Class.
+Ans.
+	~> Self represents the instance of the class.
+	~> SELF represents the instance of class. This handy keyword allows you to access variables, attributes, and methods of a defined class in Python.
+	Ex., def say_hello(self): print(f"Hello, my name is {self.name} and I am {self. age} years old.")
+
+Q.23 Write a Python class named Rectangle constructed by a length and width and a method which will compute the area of a rectangle.
+Ans.
+	 Ans In VS code file...
+
+Q.24 Write a Python class named Circle constructed by a radius and two methods which will compute the area and the perimeter of a circle.
+Ans.
+	Ans In VS Code File...
+
+Q.25 Explain Inheritance in Python with an example? What is init? Or What Is A Constructor In Python? 
+Ans.
+	The INIT function initializes the data structures required by the rest of the computation of the aggregate.
+~> Constructors in Python is a special class method for creating and initializing an object instance at that class.
+
+Q.26 What is Instantiation in terms of OOP terminology? 
+Ans.
+	In the OOP language C#, instantiation describes the processes of creating a new object for a class using a new keyword.
+
+Q.27 What is used to check whether an object o is an instance of class A? 
+Ans.
+	The isinstance () function checks whether an object is an instance of the class mentioned. One can test if an object or variable is an instance of the type or class.
+
+Q.28 What relationship is appropriate for Course and Faculty? 
+Ans.
+	1. One To many Relationship:
+	~> Faculty can teach multiple Courses.
+	~> Each Course is typically taught by one Faculty member (though in some cases, a course might have multiple instructors, but for simplicity, we can consider a primary instructor).
+
+	2.Composition or Aggregation:
+	~> In a more hierarchical model, you might view Faculty as a part of the educational institution that offers Courses. This means that Faculty can exist independently, but they are often associated with one or more Courses.
+
+Q.29 What relationship is appropriate for Student and Person? 
+Ans.
+	simply we can say that it establishes an “is-a” or “kind of” relationship between Student and Person class. Saying that, Student is a kind of Person.
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
