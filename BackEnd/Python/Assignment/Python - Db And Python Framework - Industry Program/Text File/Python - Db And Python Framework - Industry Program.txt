@@ -1,0 +1,55 @@
+Q.1 Why Django should be used for web-development? Explain how you can create a project in Django?
+Ans.
+	 Django is a high-level Python web framework that enables rapid development of secure and maintainable websites.
+Step 1: Install Python and Django
+Step 2: Create a Django Project
+Step 3: Configure the Project
+Step 4: Create the First App
+Step 5: Create a Database and Run Migrations
+Step 6: Run the Development Server
+Step 7: Start Developing Your Application
+
+Q.2 How to check installed version of django? 
+Ans.
+Step 1-> python -m django –version
+Step 2-> django-admin –version
+Step 3-> ./manage.py –version or python manage.py –version
+Step 4-> pip freeze | grep Django
+Step 5-> python -c “import django; print(django.get_version())“
+Step 6-> python manage.py runserver –version
+
+Q.3 Explain what does django-admin.py make messages command is used for?
+Ans.
+	 Makemessages  Runs over the entire source tree of the current directory and pulls out all strings marked for translation. It creates (or updates) a message file in the conf/locale (in the Django tree) or locale (for project and application) directory.
+
+Q.4 What is Django URLs? make program to create django urls
+Ans.
+	Django, a URL is a unique string that represents a specific resource or action on a web application. URLs are used to route users to the appropriate content or functionality when they visit a web application.
+
+Q.5 What is a QuerySet? Write program to create a new Post object in database:
+Ans.
+	a\A QuerySet is a collection of database queries that Django ORM (Object-Relational Mapping) uses to retrieve and interact with the data in the database. A QuerySet can represent a single object or a collection of objects from the database. It allows you to perform filtering, ordering, and aggregation on your data.
+
+A QuerySet is generated from a model, and it can be used to fetch, create, update, or delete records in the database. QuerySets are lazy, meaning that they are only evaluated when needed
+	
+Q.6 Mention what command line can be used to load data into Django? 
+Ans.
+	Django provides the loaddata management command to load data into the database from a fixture file. Fixtures are files containing serialized data in formats like JSON, XML, or YAML.
+
+Q.7 Explain what does django-admin.py make messages command is used for?
+Ans.
+	When you run makemessages, Django scans your project’s source code (templates, views, models, etc.) for text that has been marked for translation. It then generates .po files, which are Portable Object files that store these text strings along with their translations into different languages.
+
+Q.8	Make Django application to demonstrate following things o There will
+be 2 modules(Admin,Product manager) o Admin can add product name
+(ex.Product id and product name) ex. (1, Samsung), (2, Apple)...etc.
+Data should store in 
+Ans.
+	Ans in Code File...
+
+
+
+
+ 
+
+
